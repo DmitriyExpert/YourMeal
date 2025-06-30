@@ -1,0 +1,97 @@
+@use 'sass:math';
+
+/* Адаптивный шрифт */
+
+@mixin fluid-text($max: 48, $min: 16) {
+  $maxViewportWidth: 1400;
+  $minViewportWidth: 360;
+
+  $maxSize: math.div($max, 16);
+  $minSize: math.div($min, 16);
+  $maxWidth: math.div($maxViewportWidth, 16);
+  $minWidth: math.div($minViewportWidth, 16);
+
+  $slope: math.div(($maxSize - $minSize), ($maxWidth - $minWidth));
+  $yAxisIntersection: -$minWidth * $slope + $minSize;
+
+  font-size: clamp(#{$minSize * 1rem}, #{$yAxisIntersection * 1rem} + #{$slope * 100vw}, #{$maxSize * 1rem});
+}
+
+/* Flex box tool kit */
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-center-column {
+  flex-direction: column;
+
+  @include flex-center;
+}
+
+@mixin flex-center-vert {
+  display: flex;
+  align-items: center;
+}
+
+@mixin flex-center-horiz {
+  display: flex;
+  justify-content: center;
+}
+
+/* Media выражения (дополняемо) */
+$mobile: 320;
+$tablet: 768;
+$large: 1024;
+$desktop: 1440;
+
+@mixin mobile {
+  @media only screen and (width >= calc($mobile * 1px)) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media only screen and (width >= calc($tablet * 1px)) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media only screen and (width >= calc($large * 1px)) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media only screen and (width >= calc($desktop * 1px)) {
+    @content;
+  }
+}
+
+/* Создать квадрат */
+
+@mixin box($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+/* Отцентрировать, растянуть фоновое изображение */
+
+@mixin cover-background {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

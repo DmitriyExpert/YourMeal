@@ -1,0 +1,6 @@
+<svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <symbol id="close-symbol">
+    <path fill="#B1B1B1" d="m5.075 5.282.707-.707 14.142 14.142-.707.708z"/>
+    <path fill="#B1B1B1" d="m5.783 19.425-.707-.707L19.218 4.575l.707.708z"/>
+  </symbol>
+</svg>

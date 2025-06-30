@@ -1,0 +1,32 @@
+{
+  "name": "vite-project",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "checkPret": "prettier --check .",
+    "formatPret": "prettier --write .",
+    "styleLintFix": "npx stylelint **/*.scss --fix",
+    "fixAll": "npm run formatPret && npm run styleLintFix",
+    "fixAndBuild": "npm run fixAll && npm run build",
+    "fixAndDev": "npm run fixAll && npm run dev"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "prettier": "^3.6.2",
+    "sass-embedded": "^1.89.2",
+    "scss-reset": "^1.4.6",
+    "stylelint": "^16.21.0",
+    "stylelint-config-recommended-scss": "^15.0.1",
+    "stylelint-config-standard": "^38.0.0",
+    "stylelint-config-standard-scss": "^15.0.1",
+    "stylelint-order": "^6.0.4",
+    "vite": "^7.0.0"
+  },
+  "dependencies": {
+    "normalize-scss": "^8.0.0"
+  }
+}
