@@ -1,0 +1,94 @@
+@use '@/scss/globals/global' as *;
+
+.header {
+  background-image: $background-url;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  padding-block: rem(24) rem(63);
+
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    row-gap: rem(24);
+
+    @include large {
+      row-gap: rem(23);
+    }
+
+    @include tablet {
+      row-gap: rem(24);
+    }
+  }
+
+  &__logo {
+    text-align: center;
+  }
+
+  &__content {
+    @include flex-center-horiz;
+    column-gap: rem(19);
+
+    @include desktop {
+      column-gap: rem(1);
+    }
+
+    @include large {
+      column-gap: rem(10);
+    }
+
+    @include tablet {
+      @include flex-center-column;
+      row-gap: rem(19);
+    }
+  }
+
+  &__decorate-burger {
+    max-width: clamp(14.188rem, -4.375rem + 38.67vw, 20.375rem);
+    width: 100%;
+    @include tablet {
+      order: 2;
+    }
+  }
+
+  &__text {
+    @include flex-column;
+    padding-block: rem(46) rem(86);
+    row-gap: rem(55);
+    max-width: clamp(18.75rem, 14.858rem + 19.46vw, 27.313rem);
+    color: $white-color;
+
+    &-title {
+      line-height: 1.2;
+      & span {
+        color: $secondary-color;
+      }
+    }
+
+    &-subtitle {
+      line-height: 1.2;
+    }
+
+    @include large {
+      padding-block: rem(27) rem(74);
+      row-gap: rem(29);
+    }
+
+    @include tablet {
+      padding-block: 0;
+      text-align: center;
+      order: 1;
+    }
+    
+  }
+
+  @include large {
+    padding-block: rem(24) rem(44);
+  }
+
+  @include tablet {
+    padding-block: rem(24) rem(30);
+  }
+  
+}

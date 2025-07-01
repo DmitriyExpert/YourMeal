@@ -1,0 +1,28 @@
+@use '@/scss/globals/global' as *;
+
+body {
+  font-family: 'Nunito', sans-serif;
+  font-size: $main-font-size;
+  background-color: $bg-color;
+}
+
+img {
+  object-fit: cover;
+}
+
+.container {
+  max-width: 1310px;
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: 10px;
+}
+
+h1 {
+  font-size: clamp(1.875rem, 1.307rem + 2.84vw, 3.125rem);
+  font-weight: 800;
+}
+
+a:focus-visible {
+  outline: 2px $secondary-color solid;      
+}
+

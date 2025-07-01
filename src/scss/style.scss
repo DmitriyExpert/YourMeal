@@ -1,7 +1,8 @@
 @use 'scss-reset/reset';
 @use 'normalize-scss/sass/normalize';
-@use '@/scss/components/components';
-
+@use '_main-style.scss';
+@use '@/scss/globals/global' as *;
+@use '@/scss/components/components' as *;
 
 
 

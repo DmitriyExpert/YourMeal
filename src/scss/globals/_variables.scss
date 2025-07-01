@@ -1,7 +1,18 @@
 // colors
 
+@use 'functions' as *;
+@use 'mixins' as *;
+
 $accent-color: #FFAB08;
 $secondary-color: #FF7020;
 $dark-color: #000;
 $very-light-color: #F9F9F9;
 $light-color: #F2F2F3;
+$white-color: #fff;
+$bg-color: #f9f9f9;
+
+$background-url: url('/images/header/bg.svg');
+
+
+$main-font-size: clamp(0.75rem, 1.56vw, 1rem);
+
