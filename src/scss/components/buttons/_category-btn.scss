@@ -1,0 +1,28 @@
+@use '@/scss/globals/global' as *;
+
+.category-btn {
+  display: flex;
+  align-items: center;
+  column-gap: rem(8);
+  
+  text-align: center;
+  border-radius: rem(50);
+  padding-block: rem(8);
+  padding-inline: rem(14);
+  outline: 2px solid transparent;
+
+  &.active {
+    background-color: $accent-color;
+    pointer-events: none;
+  }
+
+  &:hover, 
+  &:focus-visible {
+    outline: 2px solid $heigh-sec-color;
+  }
+
+  @include large {
+    padding-block: rem(3);
+    padding-inline: rem(8);
+  }
+}

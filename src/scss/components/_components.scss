@@ -1,5 +1,15 @@
 @use '@/scss/globals/global' as *;
-@use './header/header'
+@use '@/scss/components/header/header';
+@use '@/scss/components/main/main';
+@use '@/scss/components/category/category';
+@use '@/scss/components/list/list';
+@use '@/scss/components/buttons/button';
+
+@use '@/scss/components/information/information';
+@use '@/scss/components/contact-line/contact-line';
+@use '@/scss/components/social/social';
+@use '@/scss/components/note/note';
+@use '@/scss/components/footer/footer';
 
 
 

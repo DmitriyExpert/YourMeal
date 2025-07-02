@@ -1,0 +1,13 @@
+@use '@/scss/globals/global' as *;
+
+.list {
+  display: flex;
+  align-items: center;
+
+  &__item:not(:has(.category-btn))  {
+    & button:hover {
+      background-color: $accent-color;
+      color: $white-color;
+    }
+  }
+}

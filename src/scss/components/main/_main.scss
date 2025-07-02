@@ -1,0 +1,12 @@
+@use '@/scss/globals/global' as *;
+
+.main {
+  padding-block: rem(40) rem(100);
+  @include flex-column;
+  row-gap: rem(50);
+
+  @include tablet {
+    padding-block: rem(30) rem(80);
+    row-gap: rem(30);
+  }
+}

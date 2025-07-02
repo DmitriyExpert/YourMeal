@@ -1,0 +1,8 @@
+@use '@/scss/globals/global' as *;
+
+.button {
+  background-color: $white-color;
+  color: $dark-color;
+  transition: all .3s ease;
+  line-height: 1;
+}

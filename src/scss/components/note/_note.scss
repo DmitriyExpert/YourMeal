@@ -1,0 +1,12 @@
+@use '@/scss/globals/global' as *;
+.note {
+  &__text {
+    font-size: rem(12);
+    @include flex-column;
+    row-gap: rem(4);
+
+    & span {
+      display: block;
+    }
+  }
+}

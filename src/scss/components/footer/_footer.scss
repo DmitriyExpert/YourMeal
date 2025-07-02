@@ -1,0 +1,40 @@
+@use '@/scss/globals/global' as *;
+
+.footer {
+  padding-block: rem(51) rem(40);
+  background-color: $white-color;
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    row-gap: rem(35);
+
+    @include large {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__logo {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    color: $secondary-color;
+
+    &-svg {
+      max-width: clamp(12.25rem, -8.188rem + 42.58vw, 19.063rem);
+      width: 100%;
+    }
+  }
+
+  &__information {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  &__note {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+}

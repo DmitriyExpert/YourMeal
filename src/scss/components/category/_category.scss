@@ -1,0 +1,18 @@
+@use '@/scss/globals/global' as *;
+
+.category {
+
+  &__list {
+    gap: rem(24);
+    flex-wrap: wrap;
+
+    @include large {
+      gap: rem(12);
+    }
+
+    @include tablet {
+      gap: rem(8);
+    }
+  }
+  
+}

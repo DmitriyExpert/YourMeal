@@ -1,0 +1,16 @@
+@use '@/scss/globals/global' as *;
+
+.contact__line {
+
+  position: relative;
+  padding-inline-start: rem(28);
+  &::before {
+    content: url("@/../public/icons/call.svg");
+    max-width: clamp(1.125rem, 2.34vw, 1.5rem);
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}

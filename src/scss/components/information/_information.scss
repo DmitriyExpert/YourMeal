@@ -1,0 +1,34 @@
+@use '@/scss/globals/global' as *;
+
+.information {
+  @include flex-row;
+  column-gap: rem(126);
+
+  &__item {
+    @include flex-column;
+    row-gap: clamp(0.5rem, -2.5rem + 6.25vw, 1.5rem);
+
+    &-title {
+      font-size: clamp(1.125rem, 2.34vw, 1.5rem);
+      line-height: 1;
+    }
+
+    @include large {
+      flex: 1 1 0;
+    }
+  }
+
+  @include desktop {
+    justify-content: flex-end;
+    column-gap: rem(50);
+  }
+
+  @include large {
+    justify-content: flex-start;
+    gap: rem(24);
+  }
+
+  @include tablet {
+    @include flex-column;
+  }
+}
