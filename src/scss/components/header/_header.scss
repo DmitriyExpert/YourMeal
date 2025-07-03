@@ -56,6 +56,7 @@
   &__decorate-burger {
     max-width: clamp(14.188rem, -4.375rem + 38.67vw, 20.375rem);
     width: 100%;
+    animation: scalesize 7s ease infinite 3s;
     @include tablet {
       order: 2;
     }
