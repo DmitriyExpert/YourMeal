@@ -13,4 +13,8 @@
     top: 50%;
     transform: translateY(-50%);
   }
+  transition: color .3s ease-in-out;
+  &:hover {
+    color: $secondary-color;
+  }
 }

@@ -1,0 +1,12 @@
+@use '@/scss/globals/global' as *;
+
+.maincounter {
+  padding-block: rem(2);
+  padding-inline: rem(17);
+  background-color: $light-color;
+  border-radius: rem(6);
+
+  &__text {
+    font-size: clamp(0.625rem, 0.25rem + 0.78vw, 0.75rem);
+  }
+}

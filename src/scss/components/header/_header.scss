@@ -6,7 +6,7 @@
   background-size: cover;
   background-position: bottom center;
   padding-block: rem(24) rem(63);
-
+  
   &__container {
     display: grid;
     grid-template-columns: 1fr;
@@ -24,6 +24,15 @@
 
   &__logo {
     text-align: center;
+
+    &--link {
+      color: $white-color;
+      transition: color .3s ease;
+      
+      &:hover {
+        color: $secondary-color;
+      }
+    }
   }
 
   &__content {

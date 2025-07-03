@@ -1,0 +1,19 @@
+@use '@/scss/globals/global' as *;
+
+.social {
+  @include flex-center-vert;
+  gap: rem(16);
+  color: $secondary-color;
+
+  & &__icon:hover {
+    color: $accent-color;
+    scale: 1.1;
+    transition: all .3s ease-in-out;
+  }
+
+  &__icon {
+    cursor: pointer;
+    max-width: rem(36);
+    width: 100%;
+  }
+}

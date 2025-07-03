@@ -1,0 +1,33 @@
+@use '@/scss/globals/global' as *;
+
+
+.basket {
+  
+  &__wrapper {
+    @include flex-column;
+    padding-block: rem(24);
+    padding-inline: rem(16);
+    background-color: $white-color;
+    border-radius: rem(18);
+    min-width: rem(300);
+    width: 100%;
+
+    @include large {
+      padding-block: rem(16);
+      padding-inline: rem(10);
+    }
+  }
+
+  &__top {
+    @include flex-space-between;
+    align-items: center;
+  }
+
+  &__title {
+    font-size: clamp(1rem, -0.5rem + 3.13vw, 1.5rem);
+    line-height: 1;
+    font-weight: 600;
+  }
+
+
+}
