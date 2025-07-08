@@ -9,4 +9,9 @@
   &__text {
     font-size: clamp(0.625rem, 0.25rem + 0.78vw, 0.75rem);
   }
+
+  @include large {
+    padding-block: rem(1);
+    padding-inline: rem(13);
+  }
 }

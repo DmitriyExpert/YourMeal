@@ -3,8 +3,17 @@
 .category {
 
   &__list {
+    display: flex;
     gap: rem(24);
-    flex-wrap: wrap;
+    max-width: rem(1231);
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-block: rem(5);
+
+    &-item {
+      flex-shrink: 0;
+    }
 
     @include large {
       gap: rem(12);
@@ -12,6 +21,18 @@
 
     @include tablet {
       gap: rem(8);
+    }
+
+    &::-webkit-scrollbar {
+      height: rem(3);
+    }
+
+    &::-webkit-scrollbar-track {
+      background-color: $light-color;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: $accent-color;
     }
   }
   

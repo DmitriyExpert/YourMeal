@@ -1,0 +1,19 @@
+@use '@/scss/globals/global' as *;
+.execute-btn {
+  background-color: $secondary-color;
+  color: $white-color;
+  padding-block: clamp(0.563rem, 1.17vw, 0.75rem);
+  max-width: 100%;
+  width: 100%;
+  border-radius: rem(8);
+  transition: background-color .3s ease;
+
+  &:hover {
+    background-color: $accent-color;
+  }
+
+  &:focus-visible,
+  &:active {
+    background-color: $heigh-sec-color;
+  }
+}

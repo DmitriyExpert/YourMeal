@@ -21,12 +21,57 @@
   &__top {
     @include flex-space-between;
     align-items: center;
+    margin-block-end: rem(12);
+    @include large {
+      margin-block-end: rem(8);
+    }
   }
 
   &__title {
     font-size: clamp(1rem, -0.5rem + 3.13vw, 1.5rem);
     line-height: 1;
     font-weight: 600;
+  }
+
+  &__delivery {
+    display: flex;
+  }
+
+  &__list {
+    flex-direction: column;
+    align-items: flex-start;
+    max-height: rem(222);
+    overflow-y: auto;
+    padding-inline-end: rem(3);
+    &-item {
+      padding-block: rem(16);
+      border-block-end: rem(1) solid $light-color;
+      max-width: 100%;
+      width: 100%;
+      &:first-child {
+        border-block-start: rem(1) solid $light-color;
+      }
+
+      @include large {
+        padding-block: rem(11);
+      }
+    }
+
+    &::-webkit-scrollbar {
+      width: rem(3);
+    }
+
+    &::-webkit-scrollbar-track {
+      background-color: $light-color;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: $accent-color;
+    }
+
+    @include large {
+      max-height: rem(198);
+    }
   }
 
 

@@ -1,0 +1,13 @@
+@use '@/scss/globals/global' as *;
+
+.card {
+  display: flex;
+
+  &__basket {
+    align-items: center;
+  }
+
+  &__counter-managment {
+    display: flex;
+  }
+}

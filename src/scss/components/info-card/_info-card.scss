@@ -1,0 +1,29 @@
+@use '@/scss/globals/global' as *;
+
+
+.info-card {
+  display: flex;
+  flex-direction: column;
+
+  &__basket {
+    margin-inline-start: rem(6);
+    gap: rem(6);
+    font-size: rem(12);
+    &-subinform {
+      gap: rem(1);
+    }
+  }
+
+  &__catalog {
+    font-size: rem(16);
+  }
+
+  &__gram {
+    color: $light-gram-color;
+  }
+
+  &__subinform {
+    display: flex;
+    flex-direction: column;
+  }
+}

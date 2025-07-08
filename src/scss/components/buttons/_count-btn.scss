@@ -1,0 +1,9 @@
+@use '@/scss/globals/global' as *;
+
+.count-btn {
+  background-color: transparent;
+  
+  &:hover {
+    scale: 1.8;
+  }
+}
