@@ -7,6 +7,10 @@
     grid-template-columns: max-content 1fr;
     grid-template-rows: auto;
     gap: rem(30);
+
+    @include large {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__title {
@@ -14,16 +18,57 @@
     font-size: clamp(1.75rem, -0.5rem + 4.69vw, 2.5rem);
     line-height: 1.2;
     grid-column: 2/3;
+    @include large {
+      grid-column: auto;
+    }
   }
 
   &__basket {
     grid-column: 1/2;
     grid-row: 2/3;
+    max-width: rem(300);
+    width: 100%;
+    @include large {
+      grid-column: auto;
+      grid-row: auto;
+    }
   }
 
   &__list {
     grid-column: 2/3;
     grid-row: 2/3;
     align-items: start;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: rem(30);
+
+    @include large {
+      gap: rem(20);
+      grid-column: auto;
+      grid-row: auto;
+      justify-content: center; 
+    }
+
+    @include tablet {
+      gap: rem(10)
+    }
+
+    &-item {
+      padding-block: rem(12);
+      padding-inline: rem(12);
+      background-color: $white-color;
+      border-radius: rem(18);
+      max-width: clamp(9.063rem, -20rem + 60.55vw, 18.75rem);
+      
+
+      @include large {
+        padding-block: rem(4);
+        padding-inline: rem(4);
+        border-radius: rem(12);
+      }
+    }
   }
+
+
 }

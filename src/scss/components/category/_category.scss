@@ -9,7 +9,8 @@
     width: 100%;
     overflow-x: auto;
     white-space: nowrap;
-    padding-block: rem(5);
+    padding-block: rem(2) rem(5);
+    padding-inline-start: 2px;
 
     &-item {
       flex-shrink: 0;

@@ -1,0 +1,22 @@
+@use '@/scss/globals/global' as *;
+
+
+.adding-btn {
+  background-color: $light-color;
+  max-width: 100%;
+  width: 100%;
+  text-align: center;
+  padding-block: rem(12);
+  border-radius: rem(12);
+
+  @include large {
+    padding-block: rem(9);
+    border-radius: rem(8);
+  }
+
+  &:focus-visible,
+  &:active {
+    background-color: $heigh-sec-color;
+    color: $white-color;
+  }
+}

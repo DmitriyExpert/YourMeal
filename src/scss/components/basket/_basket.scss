@@ -2,8 +2,12 @@
 
 
 .basket {
+
+  position: relative;
   
   &__wrapper {
+    position: sticky;
+    top: rem(20);
     @include flex-column;
     padding-block: rem(24);
     padding-inline: rem(16);

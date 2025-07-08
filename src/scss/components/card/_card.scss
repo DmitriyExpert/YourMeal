@@ -3,6 +3,10 @@
 .card {
   display: flex;
 
+  &__top {
+    cursor: pointer;
+  }
+
   &__basket {
     align-items: center;
   }
@@ -10,4 +14,25 @@
   &__counter-managment {
     display: flex;
   }
+
+  &__catalog {
+    flex-direction: column;
+    row-gap: rem(8);
+
+    @include large {
+      row-gap: rem(7);
+    }
+  }
+
+
+  &__image {
+    &-catalog {
+      border-radius: rem(12);
+
+      @include large {
+        border-radius: rem(8);
+      }
+    }
+  }
+
 }

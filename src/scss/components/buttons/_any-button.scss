@@ -5,4 +5,8 @@
   color: $dark-color;
   transition: all .3s ease;
   line-height: 1;
+
+  &.unactive {
+    
+  } 
 }
