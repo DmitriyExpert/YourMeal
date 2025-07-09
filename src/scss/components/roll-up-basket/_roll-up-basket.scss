@@ -1,0 +1,13 @@
+@use '@/scss/globals/global' as *;
+
+.roll-up-basket {
+  cursor: pointer;
+  display: none;
+  margin-inline-start: auto;
+  font-size: rem(10);
+  color: $light-gram-color;
+
+  @include large {
+    display: inline;
+  }
+}

@@ -1,0 +1,32 @@
+@use '@/scss/globals/global' as *;
+
+.delivery-item {
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    max-width: 50%;
+    width: 100%;
+    background-color: $accent-color;
+    top: 0;
+    z-index: 0;
+  }
+
+  &__item {
+    position: relative;
+    z-index: 1;
+    flex: 1 1 50%;
+    align-items: left;
+    padding-block: rem(20) 0;
+    padding-inline: rem(24);
+    &.decoration {
+      animation: scalesize 7s ease infinite;
+      align-items: center;
+      justify-content: space-between;
+      padding-block: 0;
+      padding-inline: 0;
+    }
+  }
+
+}

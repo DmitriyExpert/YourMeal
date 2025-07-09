@@ -10,7 +10,7 @@
     overflow-x: auto;
     white-space: nowrap;
     padding-block: rem(2) rem(5);
-    padding-inline-start: 2px;
+    padding-inline: 2px;
 
     &-item {
       flex-shrink: 0;
@@ -33,6 +33,7 @@
     }
 
     &::-webkit-scrollbar-thumb {
+      cursor: pointer;
       background-color: $accent-color;
     }
   }

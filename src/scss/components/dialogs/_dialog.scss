@@ -1,0 +1,74 @@
+@use '@/scss/globals/global' as *;
+
+
+.dialog {
+
+  border-radius: rem(24);
+  border: none;
+  max-width: clamp(32.75rem, 2.75rem + 62.5vw, 42.75rem);
+  width: 100%;
+  padding-inline: rem(24);
+  padding-block: rem(24) rem(36);
+  display: none;
+  &::backdrop {
+    background-color: $dark-color;
+    opacity: 0;
+
+  }
+
+  &[open].closing {
+    animation: dialogAnimClose .3s linear forwards;
+    &::backdrop {
+      animation: reverseFadeInBackdrop .4s linear forwards;
+    }
+  }
+
+  &[open] {
+    display: flex;
+    animation: dialogAnimOpen .3s linear forwards;
+    &::backdrop {
+      opacity: .8;
+      animation: fadeInBackdrop .4s ease forwards;
+    }
+
+    @include tablet {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(2, max-content) 1fr;
+    }
+  }
+
+
+
+  &__close {
+    cursor: pointer;
+    position: absolute;
+    z-index: 10000;
+    right: rem(24);
+    max-width: rem(24);
+    &:focus-visible {
+      outline: solid 1px $accent-color;
+    }
+
+    @include large {
+      right: rem(16);
+    }
+
+    @include tablet {
+      right: rem(10);
+      top: rem(20);
+    }
+  }
+
+  @include large {
+    padding-inline: rem(16);
+    padding-block: rem(16) rem(24);
+  }
+
+  @include tablet {
+    min-height: 100vh;
+    max-width: 100%;
+    width: 100%;
+    border-radius: 0;
+  }
+}

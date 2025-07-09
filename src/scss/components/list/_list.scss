@@ -2,7 +2,6 @@
 
 .list {
   display: flex;
-  align-items: center;
 
   &__item:not(:has(.category-btn)),
   &__item:not(:has(.count-btn)) {

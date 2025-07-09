@@ -19,4 +19,9 @@
     background-color: $heigh-sec-color;
     color: $white-color;
   }
+
+  &:hover {
+    background-color: $accent-color;
+    color: $white-color;
+  }
 }

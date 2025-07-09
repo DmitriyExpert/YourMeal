@@ -16,7 +16,12 @@
     min-width: rem(300);
     width: 100%;
 
+    &.active {
+      cursor: default;
+    }
+
     @include large {
+      cursor: pointer;
       padding-block: rem(16);
       padding-inline: rem(10);
     }
@@ -70,6 +75,7 @@
     }
 
     &::-webkit-scrollbar-thumb {
+      cursor: pointer;
       background-color: $accent-color;
     }
 

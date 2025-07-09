@@ -1,0 +1,45 @@
+@use '@/scss/globals/global' as *;
+
+.description-item {
+  flex-direction: column;
+  gap: rem(24);
+
+  &__title {
+    line-height: 1.2;
+    font-size: clamp(1.75rem, -0.5rem + 4.69vw, 2.5rem);
+    font-weight: 600;
+  }
+
+  &__content {  
+    display: flex;
+    gap: rem(16);
+    max-width: 100%;
+    width: 100%;
+    @include large {
+      column-gap: rem(8);
+    }
+    
+    @include tablet {
+      flex-direction: column;
+    }
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: rem(10);
+
+    @include tablet {
+      max-width: rem(500);
+    }
+  }
+
+  &__images {
+    border-radius: rem(16);
+
+    @include tablet {
+      max-width: rem(400);
+    }
+  }
+
+}

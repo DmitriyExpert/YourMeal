@@ -20,6 +20,7 @@
     grid-column: 2/3;
     @include large {
       grid-column: auto;
+      order: 1;
     }
   }
 
@@ -31,6 +32,7 @@
     @include large {
       grid-column: auto;
       grid-row: auto;
+      order: 0;
     }
   }
 
@@ -48,6 +50,7 @@
       grid-column: auto;
       grid-row: auto;
       justify-content: center; 
+      order: 2;
     }
 
     @include tablet {

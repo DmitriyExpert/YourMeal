@@ -1,4 +1,3 @@
-@use '@/scss/globals/global' as *;
 @use '@/scss/components/header/header';
 @use '@/scss/components/main/main';
 @use '@/scss/components/category/category';
@@ -12,12 +11,16 @@
 @use '@/scss/components/counter-managment/counter-managment';
 @use '@/scss/components/total/total';
 @use '@/scss/components/delivery/delivery';
+@use '@/scss/components/roll-up-basket/roll-up-basket';
 
 @use '@/scss/components/information/information';
 @use '@/scss/components/contact-line/contact-line';
 @use '@/scss/components/social/social';
 @use '@/scss/components/note/note';
 @use '@/scss/components/footer/footer';
+@use '@/scss/components/dialogs/dialog-connector';
+@use '@/scss/components/structure/structure';
+@use '@/scss/components/descrip-managment/descrip-managment'
 
 
 

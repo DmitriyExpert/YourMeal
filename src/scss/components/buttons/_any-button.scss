@@ -7,6 +7,8 @@
   line-height: 1;
 
   &.unactive {
-    
+    background-color: $light-color;
+    pointer-events: none;
+    color: $notactive-btn-colortext;
   } 
 }
