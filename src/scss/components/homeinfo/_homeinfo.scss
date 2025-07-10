@@ -1,0 +1,14 @@
+@use '@/scss/globals/global' as *; 
+
+.homeinfo {
+  &__inner {
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  &__input {
+    max-width: 48%;
+  }
+}

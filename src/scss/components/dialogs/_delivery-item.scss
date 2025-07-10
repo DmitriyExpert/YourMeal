@@ -1,6 +1,7 @@
 @use '@/scss/globals/global' as *;
 
 .delivery-item {
+  background-color: $bg-color;
   &::after {
     content: "";
     position: absolute;
@@ -17,15 +18,27 @@
     position: relative;
     z-index: 1;
     flex: 1 1 50%;
+    display: flex;
     align-items: left;
     padding-block: rem(20) 0;
-    padding-inline: rem(24);
+    padding-inline: rem(24) 0;
     &.decoration {
       animation: scalesize 7s ease infinite;
       align-items: center;
-      justify-content: space-between;
+      justify-content: center;
       padding-block: 0;
       padding-inline: 0;
+
+      @include large {
+        display: none;
+      }
+    }
+  }
+
+
+  @include large {
+    &::after {
+      display: none;
     }
   }
 

@@ -132,7 +132,9 @@
                   <p class="total__text">Итого</p>
                   <p class="total__text total__text-price">0₽</p>
                 </div>
-                <button class="button execute-btn" type="button" onclick="window.deliveryItem.showModal()">Оформить заказ</button>
+                <button class="button execute-btn" type="button" onclick="window.deliveryItem.showModal()">
+                  Оформить заказ
+                </button>
                 <div class="basket__delivery delivery">
                   <img src="/icons/delivery.svg" alt="" class="delivery__img" />
                   <p class="delivery__text">Платная доставка</p>
@@ -394,43 +396,32 @@
       </button>
       <h2 class="description-item__title">Мясная бомба</h2>
       <div class="description-item__content">
-        <img src="/images/catalog/meal-bomb.png" class="description-item__content-item description-item__images" alt="Мясная бомба (бургер)" />
+        <img
+          src="/images/catalog/meal-bomb.png"
+          class="description-item__content-item description-item__images"
+          alt="Мясная бомба (бургер)"
+        />
         <div class="description-item__text description-item__content-item">
           <p class="description-item__subtitle description-item__text-description">
-            Супер мясное наслаждение! Большая рубленая котлета из свежего говяжего мяса покорит вас своей сочностью, а хрустящие листья салата добавят свежести.
+            Супер мясное наслаждение! Большая рубленая котлета из свежего говяжего мяса покорит вас своей сочностью, а
+            хрустящие листья салата добавят свежести.
           </p>
           <div class="description-item__text-structure structure">
-            <p class="description-item__subtitle"> Состав </p>
+            <p class="description-item__subtitle">Состав</p>
             <ul class="list structure__list">
-              <li class="structure__list-item">
-                Пшеничная булочка
-              </li>
-              <li class="structure__list-item">
-                Котлета из говядины
-              </li>
-              <li class="structure__list-item">
-                Красный лук
-              </li>
-              <li class="structure__list-item">
-                Листья салата
-              </li>
-              <li class="structure__list-item">
-                Соус горчичный
-              </li>
+              <li class="structure__list-item">Пшеничная булочка</li>
+              <li class="structure__list-item">Котлета из говядины</li>
+              <li class="structure__list-item">Красный лук</li>
+              <li class="structure__list-item">Листья салата</li>
+              <li class="structure__list-item">Соус горчичный</li>
             </ul>
-            <p class="structure__gram info-card__gram">
-              520г, ккал 430
-            </p>
+            <p class="structure__gram info-card__gram">520г, ккал 430</p>
           </div>
         </div>
       </div>
       <div class="description-item__managment descrip-managment">
-        <button class="button adding-btn">
-          Добавить
-        </button>
-        <p class="descrip-managment__price">
-          689₽
-        </p>
+        <button class="button adding-btn">Добавить</button>
+        <p class="descrip-managment__price">689₽</p>
       </div>
     </dialog>
     <dialog id="deliveryItem" class="dialog delivery-item dialog-anim-open">
@@ -440,10 +431,43 @@
         </svg>
       </button>
       <div class="delivery-item__item decoration">
-        <img src="/images/dialog/donat.png" alt="Пончик">
+        <img src="/images/dialog/donat.png" alt="Пончик" />
       </div>
       <div class="delivery-item__item executing">
-        
+        <h2 class="executing__title">Доставка</h2>
+        <form
+          action="#"
+          autocomplete="on"
+          id="executingForm"
+          aria-label="Форма оформления заказа"
+          class="executing__form form"
+        >
+          <fieldset class="form__userinfo form__inputfields">
+            <input type="text" class="input" name="name" placeholder="Ваше имя" required>
+            <input type="tel" class="input" name="tel" placeholder="Телефон">
+          </fieldset>
+          <fieldset class="form__deliverytype deliverytype form__inputfields">
+            <label for="radioDelivery" class="deliverytype__label label">
+              <input type="radio" id="radioDelivery" class="deliverytype__label-radio visually-hidden deliverytype__radio" name="types" value="radioDelivery">
+              <span class="deliverytype__label-visualy"></span>
+              Доставка
+            </label>
+            <label for="radioPickup" class="deliverytype__label label">
+              <input type="radio" id="radioPickup" class="deliverytype__label-radio visually-hidden deliverytype__radio" name="types" value="radioPickup">
+
+              <span class="deliverytype__label-visualy"></span>
+              Самовывоз
+            </label>
+          </fieldset>
+          <fieldset class="form__homeinfo homeinfo form__inputfields">
+            <input type="text" class="input" name="streetHome" placeholder="Улица, дом, квартира">
+            <fieldset class="homeinfo__inner">
+              <input type="text" class="input homeinfo__input" name="floor" placeholder="Этаж">
+              <input type="text" class="input homeinfo__input" name="intercom" placeholder="Домофон">
+            </fieldset>
+          </fieldset>
+        </form>
+        <button type="button" class="button execute-btn executing__btn" form="executingForm">Оформить</button>
       </div>
     </dialog>
   </body>

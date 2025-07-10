@@ -1,0 +1,35 @@
+@use '@/scss/globals/global' as *;
+
+.executing {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, max-content);
+  
+  &__btn {
+    align-self: self-end;
+  }
+
+  &__form {
+    padding-block: rem(16) rem(32);
+  }
+
+  &__title {
+    font-weight: 600;
+    line-height: 1;
+    font-size: clamp(1rem, -0.5rem + 3.13vw, 1.5rem);
+  }
+
+  &__btn {
+    max-width: rem(300);
+    width: 100%;
+  }
+
+  @include large {
+    padding-inline: 0;
+  }
+
+  @include tablet {
+    min-height: 90vh;
+    grid-template-rows: min-content 1fr 1fr;
+  }
+}

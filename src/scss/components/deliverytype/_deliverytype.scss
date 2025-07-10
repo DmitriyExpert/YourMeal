@@ -1,0 +1,39 @@
+@use '@/scss/globals/global' as *;
+
+.deliverytype {
+
+  &__label {
+    display: flex;
+    align-items: center;
+    gap: rem(8);
+    font-size: clamp(0.625rem, 0.25rem + 0.78vw, 0.75rem);
+    position: relative;
+    & input[type='radio']{
+      position: absolute;
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    & span {
+      display: inline-block;
+      width: rem(12);
+      height: rem(12);
+      border-radius: 50%;
+      background-color: $white-color;
+      border: 1px solid $light-gram-color;
+      cursor: pointer;
+    }
+
+    & input[type='radio']:checked + span {
+      background-color: $accent-color;
+      border: 1px solid $secondary-color;
+    }
+
+  }
+
+
+  
+  
+
+}

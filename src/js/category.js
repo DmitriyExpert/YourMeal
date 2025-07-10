@@ -1,3 +1,5 @@
+import data from './data/dataset';
+
 const categoryBtn = document.querySelectorAll('.category-btn');
 
 const activateButton = function(button) {
@@ -17,3 +19,4 @@ categoryBtn.forEach((button) => {
     activateButton(button)
   })
 })
+console.log(data.dishes)

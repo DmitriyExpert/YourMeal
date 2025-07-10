@@ -1,0 +1,16 @@
+@use '@/scss/globals/global' as *;
+
+.form {
+  display: grid;
+  max-width: rem(300);
+  row-gap: rem(16);
+
+  &__inputfields {
+    display: grid;
+    row-gap: rem(9);
+  }
+
+  @include tablet {
+    row-gap: rem(24);
+  }
+}
