@@ -10,6 +10,7 @@
 
     @include large {
       grid-template-columns: 1fr;
+      
     }
   }
 
@@ -49,8 +50,9 @@
       gap: rem(20);
       grid-column: auto;
       grid-row: auto;
-      justify-content: center; 
+      align-items: stretch;
       order: 2;
+      flex-grow: 1;
     }
 
     @include tablet {
@@ -64,6 +66,11 @@
       border-radius: rem(18);
       max-width: clamp(9.063rem, -20rem + 60.55vw, 18.75rem);
       
+      transition: scale .3s ease;
+      
+      &:hover {
+        scale: 1.1;
+      }
 
       @include large {
         padding-block: rem(4);

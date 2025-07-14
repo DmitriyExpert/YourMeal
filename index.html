@@ -36,62 +36,7 @@
       <section class="section category section__category">
         <div class="container category__container">
           <h2 class="visually-hidden">Категории блюд</h2>
-          <ul class="list category__list">
-            <li class="list__item category__list-item">
-              <button type="button" data-category class="button category-btn active">
-                <img src="/icons/burger.svg" alt="" />
-                <span>Бургеры</span>
-              </button>
-            </li>
-            <li class="list__item category__list-item">
-              <button type="button" class="button category-btn">
-                <img src="/icons/snacks.svg" alt="" />
-                <span>Закуски</span>
-              </button>
-            </li>
-            <li class="list__item category__list-item">
-              <button type="button" class="button category-btn">
-                <img src="/icons/hot-dogs.svg" alt="" />
-                <span>Хот-доги</span>
-              </button>
-            </li>
-            <li class="list__item category__list-item">
-              <button type="button" class="button category-btn">
-                <img src="/icons/pizza.svg" alt="" />
-                <span>Комбо</span>
-              </button>
-            </li>
-            <li class="list__item category__list-item">
-              <button type="button" class="button category-btn">
-                <img src="/icons/shawarma.svg" alt="" />
-                <span>Шаурма</span>
-              </button>
-            </li>
-            <li class="list__item category__list-item">
-              <button type="button" class="button category-btn">
-                <img src="/icons/pizza.svg" alt="" />
-                <span>Пицца</span>
-              </button>
-            </li>
-            <li class="list__item category__list-item">
-              <button type="button" class="button category-btn">
-                <img src="/icons/vok.svg" alt="" />
-                <span>Вок</span>
-              </button>
-            </li>
-            <li class="list__item category__list-item">
-              <button type="button" class="button category-btn">
-                <img src="/icons/deserts.svg" alt="" />
-                <span>Десерты</span>
-              </button>
-            </li>
-            <li class="list__item category__list-item">
-              <button type="button" class="button category-btn">
-                <img src="/icons/sous.svg" alt="" />
-                <span>Соусы</span>
-              </button>
-            </li>
-          </ul>
+          <ul class="list category__list" id="categoryList"></ul>
         </div>
       </section>
       <section class="section catalog section__catalog">
@@ -132,7 +77,7 @@
                   <p class="total__text">Итого</p>
                   <p class="total__text total__text-price">0₽</p>
                 </div>
-                <button class="button execute-btn" type="button" onclick="window.deliveryItem.showModal()">
+                <button class="button execute-btn dialog-close" aria-dialogtype="deliveryItem" type="button">
                   Оформить заказ
                 </button>
                 <div class="basket__delivery delivery">
@@ -143,196 +88,8 @@
               </div>
             </article>
           </aside>
-          <ul class="list catalog__list">
-            <li class="list__item catalog__list-item">
-              <article class="catalog__list-item__card card card__catalog">
-                <div class="card__top" onclick="window.descriptionItem.showModal()">
-                  <img
-                    src="/images/catalog/meal-bomb.png"
-                    alt="Мясная бомба (бургер)"
-                    class="card__image card__image-catalog"
-                  />
-                  <div class="card__info info-card info-card__catalog">
-                    <div class="info-card__subinform info-card__catalog-subinform">
-                      <h4 class="info-card__title">689₽</h4>
-                      <p class="info-card__subtitle">Мясная бомба</p>
-                    </div>
-                    <p class="info-card__gram info-card__catalog-gram">520г</p>
-                  </div>
-                </div>
-                <div class="card__bottom">
-                  <button type="button" class="button adding-btn">Добавить</button>
-                </div>
-              </article>
-            </li>
-            <li class="list__item catalog__list-item">
-              <article class="catalog__list-item__card card card__catalog">
-                <div class="card__top">
-                  <img
-                    src="/images/catalog/meal-bomb.png"
-                    alt="Мясная бомба (бургер)"
-                    class="card__image card__image-catalog"
-                  />
-                  <div class="card__info info-card info-card__catalog">
-                    <div class="info-card__subinform info-card__catalog-subinform">
-                      <h4 class="info-card__title">689₽</h4>
-                      <p class="info-card__subtitle">Мясная бомба</p>
-                    </div>
-                    <p class="info-card__gram info-card__catalog-gram">520г</p>
-                  </div>
-                </div>
-                <div class="card__bottom">
-                  <button type="button" class="button adding-btn">Добавить</button>
-                </div>
-              </article>
-            </li>
-            <li class="list__item catalog__list-item">
-              <article class="catalog__list-item__card card card__catalog">
-                <div class="card__top">
-                  <img
-                    src="/images/catalog/meal-bomb.png"
-                    alt="Мясная бомба (бургер)"
-                    class="card__image card__image-catalog"
-                  />
-                  <div class="card__info info-card info-card__catalog">
-                    <div class="info-card__subinform info-card__catalog-subinform">
-                      <h4 class="info-card__title">689₽</h4>
-                      <p class="info-card__subtitle">Мясная бомба</p>
-                    </div>
-                    <p class="info-card__gram info-card__catalog-gram">520г</p>
-                  </div>
-                </div>
-                <div class="card__bottom">
-                  <button type="button" class="button adding-btn">Добавить</button>
-                </div>
-              </article>
-            </li>
-            <li class="list__item catalog__list-item">
-              <article class="catalog__list-item__card card card__catalog">
-                <div class="card__top">
-                  <img
-                    src="/images/catalog/meal-bomb.png"
-                    alt="Мясная бомба (бургер)"
-                    class="card__image card__image-catalog"
-                  />
-                  <div class="card__info info-card info-card__catalog">
-                    <div class="info-card__subinform info-card__catalog-subinform">
-                      <h4 class="info-card__title">689₽</h4>
-                      <p class="info-card__subtitle">Мясная бомба</p>
-                    </div>
-                    <p class="info-card__gram info-card__catalog-gram">520г</p>
-                  </div>
-                </div>
-                <div class="card__bottom">
-                  <button type="button" class="button adding-btn">Добавить</button>
-                </div>
-              </article>
-            </li>
-            <li class="list__item catalog__list-item">
-              <article class="catalog__list-item__card card card__catalog">
-                <div class="card__top">
-                  <img
-                    src="/images/catalog/meal-bomb.png"
-                    alt="Мясная бомба (бургер)"
-                    class="card__image card__image-catalog"
-                  />
-                  <div class="card__info info-card info-card__catalog">
-                    <div class="info-card__subinform info-card__catalog-subinform">
-                      <h4 class="info-card__title">689₽</h4>
-                      <p class="info-card__subtitle">Мясная бомба</p>
-                    </div>
-                    <p class="info-card__gram info-card__catalog-gram">520г</p>
-                  </div>
-                </div>
-                <div class="card__bottom">
-                  <button type="button" class="button adding-btn">Добавить</button>
-                </div>
-              </article>
-            </li>
-            <li class="list__item catalog__list-item">
-              <article class="catalog__list-item__card card card__catalog">
-                <div class="card__top">
-                  <img
-                    src="/images/catalog/meal-bomb.png"
-                    alt="Мясная бомба (бургер)"
-                    class="card__image card__image-catalog"
-                  />
-                  <div class="card__info info-card info-card__catalog">
-                    <div class="info-card__subinform info-card__catalog-subinform">
-                      <h4 class="info-card__title">689₽</h4>
-                      <p class="info-card__subtitle">Мясная бомба</p>
-                    </div>
-                    <p class="info-card__gram info-card__catalog-gram">520г</p>
-                  </div>
-                </div>
-                <div class="card__bottom">
-                  <button type="button" class="button adding-btn">Добавить</button>
-                </div>
-              </article>
-            </li>
-            <li class="list__item catalog__list-item">
-              <article class="catalog__list-item__card card card__catalog">
-                <div class="card__top">
-                  <img
-                    src="/images/catalog/meal-bomb.png"
-                    alt="Мясная бомба (бургер)"
-                    class="card__image card__image-catalog"
-                  />
-                  <div class="card__info info-card info-card__catalog">
-                    <div class="info-card__subinform info-card__catalog-subinform">
-                      <h4 class="info-card__title">689₽</h4>
-                      <p class="info-card__subtitle">Мясная бомба</p>
-                    </div>
-                    <p class="info-card__gram info-card__catalog-gram">520г</p>
-                  </div>
-                </div>
-                <div class="card__bottom">
-                  <button type="button" class="button adding-btn">Добавить</button>
-                </div>
-              </article>
-            </li>
-            <li class="list__item catalog__list-item">
-              <article class="catalog__list-item__card card card__catalog">
-                <div class="card__top">
-                  <img
-                    src="/images/catalog/meal-bomb.png"
-                    alt="Мясная бомба (бургер)"
-                    class="card__image card__image-catalog"
-                  />
-                  <div class="card__info info-card info-card__catalog">
-                    <div class="info-card__subinform info-card__catalog-subinform">
-                      <h4 class="info-card__title">689₽</h4>
-                      <p class="info-card__subtitle">Мясная бомба</p>
-                    </div>
-                    <p class="info-card__gram info-card__catalog-gram">520г</p>
-                  </div>
-                </div>
-                <div class="card__bottom">
-                  <button type="button" class="button adding-btn">Добавить</button>
-                </div>
-              </article>
-            </li>
-            <li class="list__item catalog__list-item">
-              <article class="catalog__list-item__card card card__catalog">
-                <div class="card__top">
-                  <img
-                    src="/images/catalog/meal-bomb.png"
-                    alt="Мясная бомба (бургер)"
-                    class="card__image card__image-catalog"
-                  />
-                  <div class="card__info info-card info-card__catalog">
-                    <div class="info-card__subinform info-card__catalog-subinform">
-                      <h4 class="info-card__title">689₽</h4>
-                      <p class="info-card__subtitle">Мясная бомба</p>
-                    </div>
-                    <p class="info-card__gram info-card__catalog-gram">520г</p>
-                  </div>
-                </div>
-                <div class="card__bottom">
-                  <button type="button" class="button adding-btn">Добавить</button>
-                </div>
-              </article>
-            </li>
+          <ul class="list catalog__list" id="catalogList">
+            
           </ul>
         </div>
       </section>
@@ -388,6 +145,40 @@
       </div>
     </footer>
 
+    <template class="category__generate-template">
+      <li class="list__item category__list-item">
+        <button type="button" class="button category-btn" data-categorytype="">
+          <img src="" alt=""/>
+          <span></span>
+        </button>
+      </li>
+    </template>
+
+    <template class="catalog__generate-template">
+      <li class="list__item catalog__list-item">
+        <article class="catalog__list-item__card card card__catalog" data-dishid="">
+          <div class="card__top dialog-close" aria-dialogtype="descriptionItem">
+            <img
+              src=""
+              alt=""
+              class="card__image card__image-catalog"
+              width="276"
+            />
+            <div class="card__info info-card info-card__catalog">
+              <div class="info-card__subinform info-card__catalog-subinform">
+                <h4 class="info-card__title"></h4>
+                <p class="info-card__subtitle"></p>
+              </div>
+              <p class="info-card__gram info-card__catalog-gram"></p>
+            </div>
+          </div>
+          <div class="card__bottom">
+            <button type="button" class="button adding-btn">Добавить</button>
+          </div>
+        </article>
+      </li>
+    </template>
+
     <dialog id="descriptionItem" class="dialog description-item">
       <button class="dialog__close">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -420,7 +211,7 @@
         </div>
       </div>
       <div class="description-item__managment descrip-managment">
-        <button class="button adding-btn">Добавить</button>
+        <button class="button adding-btn dialog__close">Добавить</button>
         <p class="descrip-managment__price">689₽</p>
       </div>
     </dialog>

@@ -18,9 +18,11 @@
   &__catalog {
     flex-direction: column;
     row-gap: rem(8);
-
+    justify-content: space-between;
+    min-height: 100%;
     @include large {
       row-gap: rem(7);
+      flex-grow: 1;
     }
   }
 
@@ -28,7 +30,7 @@
   &__image {
     &-catalog {
       border-radius: rem(12);
-
+      object-fit: cover;
       @include large {
         border-radius: rem(8);
       }

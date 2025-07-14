@@ -9,6 +9,13 @@
   padding-block: rem(12);
   border-radius: rem(12);
 
+  &.dialog__close {
+    position: unset;
+    max-width: 100%;
+    width: 100%;
+    
+  }
+
   @include large {
     padding-block: rem(9);
     border-radius: rem(8);
