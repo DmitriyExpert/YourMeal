@@ -4,3 +4,4 @@ import '@/js/categoryGenerate';
 import '@/js/category';
 import '@/js/dialogs';
 import '@/js/catalogGenerate'
+import '@/js/descriptionGenerate';

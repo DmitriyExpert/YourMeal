@@ -1,5 +1,7 @@
 import data from './data/dataset';
 
+
+
 const categories = data.category;
 const categoryTmp = document.querySelector('.category__generate-template');
 const categoryList = document.querySelector('#categoryList');
@@ -21,6 +23,7 @@ if (categories.length === 0) {
 } else {
   generateCategories();
 }
+
 
 function checkCategorySection(sectionCategory) {
   if (sectionCategory) {
@@ -62,4 +65,5 @@ function generateCategories() {
   });
 
   categoryList.append(categoryFragment);
+  
 }

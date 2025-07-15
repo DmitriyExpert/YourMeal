@@ -4,6 +4,10 @@ const utils = {
     return array.find(element => element.id === id)
   },
 
+  findDishById: function(dishes, id) {
+    return dishes.find(dish => dish.dish_id === id)
+  },
+
   getCategoryByType: function(dataCategories, type) {
     return dataCategories.filter((category) => {
       return category.category_type === type

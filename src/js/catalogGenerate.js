@@ -1,6 +1,6 @@
 import utils from "./utils/getElements"
 import data from "./data/dataset"
-import dialogsUnOpened from './dialogs'
+import {dialogsUnOpened} from './dialogs'
 // Генерация начальных карточек
 const activeBtn = document.querySelector('.category-btn.active')
 const ariaActiveBtn = activeBtn.getAttribute("data-categorytype")

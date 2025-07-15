@@ -1,10 +1,12 @@
 import data from './data/dataset'
 import utils from './utils/getElements'
 import catalogGenerate from './catalogGenerate'
-import dialogsUnOpened from './dialogs'
+import {dialogsUnOpened} from './dialogs'
+import generateDialogDescription from './descriptionGenerate'
 
 const categoryBtn = document.querySelectorAll('.category-btn')
 const catalogUl = document.querySelector('#catalogList')
+
 
 // Обработка нажатия на кнопку
 
@@ -60,6 +62,7 @@ categoryBtn.forEach((button) => {
       catalogUl.append(generatedDishCard)
     })
     const dialogsUnOpenedAction = document.querySelectorAll(".dialog-close")
+    generateDialogDescription();
     dialogsUnOpened(dialogsUnOpenedAction)
   })
 })
@@ -80,3 +83,4 @@ function activateButton(button) {
 function disactivateButton(button) {
   button.classList.remove('active');
 }
+

@@ -88,9 +88,7 @@
               </div>
             </article>
           </aside>
-          <ul class="list catalog__list" id="catalogList">
-            
-          </ul>
+          <ul class="list catalog__list" id="catalogList"></ul>
         </div>
       </section>
     </main>
@@ -148,7 +146,7 @@
     <template class="category__generate-template">
       <li class="list__item category__list-item">
         <button type="button" class="button category-btn" data-categorytype="">
-          <img src="" alt=""/>
+          <img src="" alt="" />
           <span></span>
         </button>
       </li>
@@ -158,12 +156,7 @@
       <li class="list__item catalog__list-item">
         <article class="catalog__list-item__card card card__catalog" data-dishid="">
           <div class="card__top dialog-close" aria-dialogtype="descriptionItem">
-            <img
-              src=""
-              alt=""
-              class="card__image card__image-catalog"
-              width="276"
-            />
+            <img src="" alt="" class="card__image card__image-catalog" width="276" />
             <div class="card__info info-card info-card__catalog">
               <div class="info-card__subinform info-card__catalog-subinform">
                 <h4 class="info-card__title"></h4>
@@ -179,41 +172,44 @@
       </li>
     </template>
 
-    <dialog id="descriptionItem" class="dialog description-item">
+    <template class="description__generate-template">
       <button class="dialog__close">
         <svg viewBox="0 0 24 24" width="24" height="24">
           <use href="/icons/close.svg#close-symbol"></use>
         </svg>
       </button>
-      <h2 class="description-item__title">Мясная бомба</h2>
+      <h2 class="description-item__title"></h2>
       <div class="description-item__content">
         <img
-          src="/images/catalog/meal-bomb.png"
+          src=""
           class="description-item__content-item description-item__images"
-          alt="Мясная бомба (бургер)"
+          alt=""
         />
         <div class="description-item__text description-item__content-item">
           <p class="description-item__subtitle description-item__text-description">
-            Супер мясное наслаждение! Большая рубленая котлета из свежего говяжего мяса покорит вас своей сочностью, а
-            хрустящие листья салата добавят свежести.
+            
           </p>
           <div class="description-item__text-structure structure">
             <p class="description-item__subtitle">Состав</p>
             <ul class="list structure__list">
-              <li class="structure__list-item">Пшеничная булочка</li>
-              <li class="structure__list-item">Котлета из говядины</li>
-              <li class="structure__list-item">Красный лук</li>
-              <li class="structure__list-item">Листья салата</li>
-              <li class="structure__list-item">Соус горчичный</li>
+              
             </ul>
-            <p class="structure__gram info-card__gram">520г, ккал 430</p>
+            <p class="structure__gram info-card__gram"></p>
           </div>
         </div>
       </div>
       <div class="description-item__managment descrip-managment">
         <button class="button adding-btn dialog__close">Добавить</button>
-        <p class="descrip-managment__price">689₽</p>
+        <p class="descrip-managment__price"></p>
       </div>
+    </template>
+
+    <template class="structure__generate-template">
+      <li class="structure__list-item">Пшеничная булочка</li>
+    </template>
+
+    <dialog id="descriptionItem" class="dialog description-item">
+      
     </dialog>
     <dialog id="deliveryItem" class="dialog delivery-item dialog-anim-open">
       <button class="dialog__close">
@@ -234,27 +230,39 @@
           class="executing__form form"
         >
           <fieldset class="form__userinfo form__inputfields">
-            <input type="text" class="input" name="name" placeholder="Ваше имя" required>
-            <input type="tel" class="input" name="tel" placeholder="Телефон">
+            <input type="text" class="input" name="name" placeholder="Ваше имя" required />
+            <input type="tel" class="input" name="tel" placeholder="Телефон" />
           </fieldset>
           <fieldset class="form__deliverytype deliverytype form__inputfields">
             <label for="radioDelivery" class="deliverytype__label label">
-              <input type="radio" id="radioDelivery" class="deliverytype__label-radio visually-hidden deliverytype__radio" name="types" value="radioDelivery">
+              <input
+                type="radio"
+                id="radioDelivery"
+                class="deliverytype__label-radio visually-hidden deliverytype__radio"
+                name="types"
+                value="radioDelivery"
+              />
               <span class="deliverytype__label-visualy"></span>
               Доставка
             </label>
             <label for="radioPickup" class="deliverytype__label label">
-              <input type="radio" id="radioPickup" class="deliverytype__label-radio visually-hidden deliverytype__radio" name="types" value="radioPickup">
+              <input
+                type="radio"
+                id="radioPickup"
+                class="deliverytype__label-radio visually-hidden deliverytype__radio"
+                name="types"
+                value="radioPickup"
+              />
 
               <span class="deliverytype__label-visualy"></span>
               Самовывоз
             </label>
           </fieldset>
           <fieldset class="form__homeinfo homeinfo form__inputfields">
-            <input type="text" class="input" name="streetHome" placeholder="Улица, дом, квартира">
+            <input type="text" class="input" name="streetHome" placeholder="Улица, дом, квартира" />
             <fieldset class="homeinfo__inner">
-              <input type="text" class="input homeinfo__input" name="floor" placeholder="Этаж">
-              <input type="text" class="input homeinfo__input" name="intercom" placeholder="Домофон">
+              <input type="text" class="input homeinfo__input" name="floor" placeholder="Этаж" />
+              <input type="text" class="input homeinfo__input" name="intercom" placeholder="Домофон" />
             </fieldset>
           </fieldset>
         </form>
