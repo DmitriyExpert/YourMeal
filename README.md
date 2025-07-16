@@ -68,7 +68,7 @@ YourMeal - это веб-сайт для заказа самых сочных б
     npm run dev  # или yarn dev
     ```
 
-    Vite запустит локальный dev-сервер с поддержкой hot module replacement (HMR).  Откройте указанный адрес в браузере (обычно `http://localhost:3000`).
+    Vite запустит локальный dev-сервер с поддержкой hot module replacement (HMR).  Откройте указанный в консоле адрес в браузере (обычно `http://localhost:5173/`).
 
 4.  **Сборка проекта для production:**
 
