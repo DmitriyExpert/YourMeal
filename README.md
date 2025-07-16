@@ -8,7 +8,7 @@ YourMeal - это веб-сайт для заказа самых сочных б
 
 ## Демо
 
-[Демонстрация проекта]()
+<img src="./public/readme/preview.png" alt="Preview проекта" width="500">
 
 ## Технологии
 
