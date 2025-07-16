@@ -1,5 +1,4 @@
 import utils from './utils/getElements';
-import generateDialogDescription from './descriptionGenerate';
 
 const dialogs = document.querySelectorAll('.dialog');
 
