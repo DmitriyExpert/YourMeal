@@ -63,7 +63,7 @@ categoryBtn.forEach((button) => {
     })
     const dialogsUnOpenedAction = document.querySelectorAll(".dialog-close")
     generateDialogDescription();
-    dialogsUnOpened(dialogsUnOpenedAction)
+    dialogsUnOpened(dialogsUnOpenedAction) // Открытие нужного диалога 
   })
 })
 

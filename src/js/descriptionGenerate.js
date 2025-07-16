@@ -57,11 +57,26 @@ async function generateDialogDescription() {
     if (price) {
       price.textContent = `${dishFiltred.dish_price}₽`;
     }
+    generteStructureList(dishFiltred, nodeCloneDescription)
     dialog.append(nodeCloneDescription);
     dialogClose()
   }
 }
 
-generateDialogDescription()
+async function generteStructureList(dishFiltred, nodeCloneDescription) {
+
+  const structureListWrapper = nodeCloneDescription.querySelector('.structure__list')
+  const structureInfo = dishFiltred.dish_structure.split(', ')
+  const structureTmp = document.querySelector('.structure__generate-template')
+  structureListWrapper.innerHTML = ''
+
+  structureInfo.forEach((info) => {
+    const structureNode = structureTmp.content.cloneNode(true)
+    const structureLi = structureNode.querySelector('.structure__list-item')
+    structureLi.innerText = info
+    structureListWrapper.append(structureLi)
+  })
+}
+
 
 export default generateDialogDescription

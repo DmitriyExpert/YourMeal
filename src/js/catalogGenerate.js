@@ -1,6 +1,8 @@
 import utils from "./utils/getElements"
 import data from "./data/dataset"
 import {dialogsUnOpened} from './dialogs'
+import generateDialogDescription from "./descriptionGenerate"
+
 // Генерация начальных карточек
 const activeBtn = document.querySelector('.category-btn.active')
 const ariaActiveBtn = activeBtn.getAttribute("data-categorytype")
@@ -26,6 +28,7 @@ dishes.forEach((dish) => {
 })
 
 const dialogsUnOpenedAction = document.querySelectorAll(".dialog-close")
+generateDialogDescription();
 dialogsUnOpened(dialogsUnOpenedAction)
 
 

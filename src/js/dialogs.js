@@ -1,4 +1,5 @@
 import utils from './utils/getElements';
+import generateDialogDescription from './descriptionGenerate';
 
 const dialogs = document.querySelectorAll('.dialog');
 
@@ -8,10 +9,6 @@ export function dialogsUnOpened(dialogsUnOpenedAction) {
       const getTypeCurrentDialog = dialogAction.getAttribute('aria-dialogtype');
       const arrayFormNodeList = Array.from(dialogs);
       const currentDialog = utils.findElementById(arrayFormNodeList, getTypeCurrentDialog);
-
-      if (getTypeCurrentDialog === 'descriptionItem') {
-        // Функция заполнения dialog из description-generate
-      }
 
       if (!currentDialog) {
         console.warn(`Отсутствует модальное окно ${getTypeCurrentDialog}`);
