@@ -1,6 +1,7 @@
 import data from './data/dataset';
 import utils from './utils/getElements';
 import {dialogClose} from './dialogs'
+import { addBtnsClicks } from './basket';
 
 function getDishCard() {
   return new Promise((resolve) => {
@@ -41,6 +42,7 @@ async function generateDialogDescription() {
     const descriptionItemSubtitle = nodeCloneDescription.querySelector('.description-item__subtitle');
     const structureGramInfo = nodeCloneDescription.querySelector('.structure__gram');
     const price = nodeCloneDescription.querySelector('.descrip-managment__price');
+    const addBtn = nodeCloneDescription.querySelector('.adding-btn')
 
     if (descriptionItemTitle) {
       descriptionItemTitle.textContent = dishFiltred.dish_name;
@@ -57,8 +59,14 @@ async function generateDialogDescription() {
     if (price) {
       price.textContent = `${dishFiltred.dish_price}₽`;
     }
+
+    if (addBtn) {
+      addBtn.setAttribute('data-dishid', dishFiltred.dish_id)
+    }
+
     generteStructureList(dishFiltred, nodeCloneDescription)
     dialog.append(nodeCloneDescription);
+    addBtnsClicks()
     dialogClose()
   }
 }

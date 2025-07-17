@@ -3,6 +3,7 @@ import utils from './utils/getElements'
 import catalogGenerate from './catalogGenerate'
 import {dialogsUnOpened} from './dialogs'
 import generateDialogDescription from './descriptionGenerate'
+import { addBtnsClicks } from './basket'
 
 const categoryBtn = document.querySelectorAll('.category-btn')
 const catalogUl = document.querySelector('#catalogList')
@@ -58,12 +59,15 @@ categoryBtn.forEach((button) => {
       if(generatedDishCard === false) {
         console.warn("Ошибка при получении полей для данных! Перепроверьте html разметку!")  
       }
-
+      addBtnsClicks()
       catalogUl.append(generatedDishCard)
     })
     const dialogsUnOpenedAction = document.querySelectorAll(".dialog-close")
-    generateDialogDescription();
+    const basketList = document.querySelector('.basket__list')
+    generateDialogDescription()
+  
     dialogsUnOpened(dialogsUnOpenedAction) // Открытие нужного диалога 
+    addBtnsClicks()
   })
 })
 
