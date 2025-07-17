@@ -22,7 +22,9 @@ if (categories.length === 0) {
   checkCategorySection(sectionCategory);
 } else {
   generateCategories();
+  
 }
+
 
 
 function checkCategorySection(sectionCategory) {
@@ -63,7 +65,7 @@ function generateCategories() {
     nodeImg.setAttribute('src', urlToIcon);
     categoryFragment.append(nodeClone);
   });
-
+  
   categoryList.append(categoryFragment);
   
 }

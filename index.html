@@ -27,7 +27,7 @@
           <img src="/images/header/burger-svg.svg" alt="" class="header__decorate-burger" />
           <div class="header__text">
             <h1 class="header__text-title">Только самые <span>сочные бургеры!</span></h1>
-            <p class="header__text-subtitle">Бесплатная доставка от 599₽</p>
+            <p class="header__text-subtitle">Бесплатная доставка от 899₽</p>
           </div>
         </div>
       </div>
@@ -42,7 +42,7 @@
       <section class="section catalog section__catalog">
         <div class="container catalog__container">
           <h2 class="catalog__title">Бургеры</h2>
-          <aside class="catalog__basket basket">
+          <aside class="catalog__basket">
             <article class="basket__wrapper">
               <div class="basket__top">
                 <h3 class="basket__title">Корзина</h3>
@@ -50,29 +50,9 @@
                   <span class="maincounter__text">0</span>
                 </div>
               </div>
-              <p class="basket__empty d-n">Тут пока пусто :(</p>
-              <div class="catalog__content">
-                <ul class="list basket__list">
-                  <li class="list__item basket__list-item">
-                    <article class="basket__list-item__card card card__basket">
-                      <img src="/images/basket-burgers/suppersir.png" alt="Супер сырный (бургер)" class="card__image" />
-                      <div class="card__info info-card info-card__basket">
-                        <div class="info-card__subinform info-card__basket-subinform">
-                          <h4 class="info-card__title">Супер сырный</h4>
-                          <p class="info-card__gram">512г</p>
-                        </div>
-                        <p class="info-card__price">550₽</p>
-                      </div>
-                      <div class="card__counter-managment counter-managment">
-                        <button class="button count-btn count-btn-minus" type="button">-</button>
-
-                        <input value="1" type="number" min="1" step="1" max="50" class="counter-managment__counter" />
-
-                        <button class="button count-btn count-btn-plus" type="button">+</button>
-                      </div>
-                    </article>
-                  </li>
-                </ul>
+              <p class="basket__empty">Тут пока пусто :(</p>
+              <div class="catalog__content d-n">
+                <ul class="list basket__list"></ul>
                 <div class="basket__total total">
                   <p class="total__text">Итого</p>
                   <p class="total__text total__text-price">0₽</p>
@@ -180,20 +160,12 @@
       </button>
       <h2 class="description-item__title"></h2>
       <div class="description-item__content">
-        <img
-          src=""
-          class="description-item__content-item description-item__images"
-          alt=""
-        />
+        <img src="" class="description-item__content-item description-item__images" alt="" />
         <div class="description-item__text description-item__content-item">
-          <p class="description-item__subtitle description-item__text-description">
-            
-          </p>
+          <p class="description-item__subtitle description-item__text-description"></p>
           <div class="description-item__text-structure structure">
             <p class="description-item__subtitle">Состав</p>
-            <ul class="list structure__list">
-              
-            </ul>
+            <ul class="list structure__list"></ul>
             <p class="structure__gram info-card__gram"></p>
           </div>
         </div>
@@ -208,9 +180,29 @@
       <li class="structure__list-item"></li>
     </template>
 
-    <dialog id="descriptionItem" class="dialog description-item">
-      
-    </dialog>
+    <template class="basket__generate-template">
+      <li class="list__item basket__list-item">
+        <article class="basket__list-item__card card card__basket" data-dishid="">
+          <img src="/images/basket-burgers/suppersir.png" alt="" class="card__image" />
+          <div class="card__info info-card info-card__basket">
+            <div class="info-card__subinform info-card__basket-subinform">
+              <h4 class="info-card__title"></h4>
+              <p class="info-card__gram"></p>
+            </div>
+            <p class="info-card__price"></p>
+          </div>
+          <div class="card__counter-managment counter-managment">
+            <button class="button count-btn count-btn-minus" type="button">-</button>
+
+            <input value="1" type="number" min="1" step="1" max="50" class="counter-managment__counter" />
+
+            <button class="button count-btn count-btn-plus" type="button">+</button>
+          </div>
+        </article>
+      </li>
+    </template>
+
+    <dialog id="descriptionItem" class="dialog description-item"></dialog>
     <dialog id="deliveryItem" class="dialog delivery-item dialog-anim-open">
       <button class="dialog__close">
         <svg viewBox="0 0 24 24" width="24" height="24">

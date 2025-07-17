@@ -9,6 +9,11 @@
 
   &__basket {
     align-items: center;
+
+    & .card__image {
+      max-width: rem(64);
+      border-radius: rem(8);
+    }
   }
 
   &__counter-managment {

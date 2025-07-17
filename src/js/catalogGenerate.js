@@ -2,6 +2,7 @@ import utils from "./utils/getElements"
 import data from "./data/dataset"
 import {dialogsUnOpened} from './dialogs'
 import generateDialogDescription from "./descriptionGenerate"
+import { addBtnsClicks } from "./basket"
 
 // Генерация начальных карточек
 const activeBtn = document.querySelector('.category-btn.active')
@@ -29,6 +30,7 @@ dishes.forEach((dish) => {
 
 const dialogsUnOpenedAction = document.querySelectorAll(".dialog-close")
 generateDialogDescription();
+addBtnsClicks()
 dialogsUnOpened(dialogsUnOpenedAction)
 
 
