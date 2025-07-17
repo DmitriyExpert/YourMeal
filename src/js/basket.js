@@ -1,29 +1,54 @@
 import data from './data/dataset';
 import utils from './utils/getElements';
-
-const basketList = document.querySelector('.basket__list');
+import { detectDeviceType } from './utils/typeDeviceDetector';
 
 function updateBasket() {
   const basketWrapper = document.querySelector('.basket__wrapper');
   const mainCounterBasket = basketWrapper.querySelector('.maincounter__text');
-  const counterInnerCard = basketWrapper.querySelector('.counter-managment__counter');
   const total = basketWrapper.querySelector('.total__text-price');
   const deliveryText = basketWrapper.querySelector('.delivery__text');
-
+  const deviceType = detectDeviceType()
   const basketData = {
     mainCounter: mainCounterBasket.innerText,
     innerCardInfo: formirateBasketListInfo(basketWrapper),
     total: parseInt(total.innerText),
     deliveryType: deliveryText.innerText,
   };
-
+  console.log(deviceType)
   changeMainCounter(basketData);
   changeTotal(basketData);
   changeTypeDelivery(basketData);
+  
+  if(deviceType === "mobile" || deviceType === "laptop") {
+    mobileDisplayBasket()
+  } else {
+    desctopDisplayBasket()
+  }
+
+  
 
   mainCounterBasket.innerText = basketData.mainCounter;
   total.innerText = `${basketData.total}₽`;
   deliveryText.innerText = basketData.deliveryType;
+}
+
+
+function desctopDisplayBasket() {
+  const emptyMes = document.querySelector('.basket__empty')
+  const basketListItems = document.querySelectorAll('.basket__list-item')
+  const catalogContent = document.querySelector('.catalog__content')
+  const listLength = basketListItems.length
+  if(listLength > 0) {
+    emptyMes.classList.add('d-n')
+    catalogContent.classList.remove('d-n')
+  } else {
+    emptyMes.classList.remove('d-n')
+    catalogContent.classList.add('d-n')
+  }
+}
+
+function mobileDisplayBasket() {
+  console.log("baaaaasket")
 }
 
 function formirateBasketListInfo(basketWrapper) {
@@ -77,10 +102,9 @@ document.body.addEventListener('click', (event) => {
     if (counterInner.value < 50) {
       counterInner.value = String(parseInt(counterInner.value, 10) + 1);
     }
-    updateBasket(); 
+    updateBasket();
   }
 });
-
 
 document.body.addEventListener('click', (event) => {
   if (event.target.classList.contains('count-btn-minus')) {
@@ -148,13 +172,12 @@ export function addBtnsClicks() {
   addingBtns.forEach((addingBtn) => {
     addingBtn.addEventListener('click', () => {
       const addingBtnParrentCard = addingBtn.closest('.catalog__list-item');
-      const innerCardDishId = 
-      addingBtnParrentCard?.querySelector('.card').getAttribute('data-dishid') ||
-      addingBtn.getAttribute("data-dishid");
+      const innerCardDishId =
+        addingBtnParrentCard?.querySelector('.card').getAttribute('data-dishid') ||
+        addingBtn.getAttribute('data-dishid');
       generateCardInBasket(innerCardDishId);
     });
   });
 }
 
-
-
+updateBasket()
