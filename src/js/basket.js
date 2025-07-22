@@ -4,6 +4,7 @@ import { detectDeviceType } from './utils/typeDeviceDetector';
 
 function updateBasket() {
   const basketWrapper = document.querySelector('.basket__wrapper');
+  const basketList = document.querySelector('.basket__list')
   const mainCounterBasket = basketWrapper.querySelector('.maincounter__text');
   const total = basketWrapper.querySelector('.total__text-price');
   const deliveryText = basketWrapper.querySelector('.delivery__text');
@@ -18,6 +19,7 @@ function updateBasket() {
   changeMainCounter(basketData);
   changeTotal(basketData);
   changeTypeDelivery(basketData);
+  toggleEmptyMess(basketList)
   
   if(deviceType === "mobile" || deviceType === "laptop") {
     mobileDisplayBasket()
@@ -33,22 +35,30 @@ function updateBasket() {
 }
 
 
-function desctopDisplayBasket() {
+function toggleEmptyMess(basketList) {
   const emptyMes = document.querySelector('.basket__empty')
+  if(basketList.children.length > 0) {
+    return emptyMes.classList.add('d-n')
+  }
+  else {
+    return emptyMes.classList.remove('d-n')
+  }  
+}
+
+
+function desctopDisplayBasket() {
   const basketListItems = document.querySelectorAll('.basket__list-item')
   const catalogContent = document.querySelector('.catalog__content')
   const listLength = basketListItems.length
   if(listLength > 0) {
-    emptyMes.classList.add('d-n')
     catalogContent.classList.remove('d-n')
   } else {
-    emptyMes.classList.remove('d-n')
     catalogContent.classList.add('d-n')
   }
 }
 
 function mobileDisplayBasket() {
-  console.log("baaaaasket")
+  
 }
 
 function formirateBasketListInfo(basketWrapper) {
