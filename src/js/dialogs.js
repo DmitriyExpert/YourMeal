@@ -16,6 +16,7 @@ export function dialogsUnOpened(dialogsUnOpenedAction) {
       currentDialog.showModal();
     });
   });
+  dialogClose()
 }
 
 // Закрытие диалога
@@ -24,6 +25,7 @@ export function dialogClose() {
     const dialogCloseAction = dialog.querySelectorAll('.dialog__close');
     dialogCloseAction.forEach((dialogClose) => {
       dialogClose.addEventListener('click', () => {
+        console.log(dialogClose)
         addingClosing(dialog);
         dialog.addEventListener('animationend', function handler(event) {
           if (event.animationName === 'reverseFadeInBackdrop') {

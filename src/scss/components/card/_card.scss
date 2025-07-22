@@ -42,4 +42,10 @@
     }
   }
 
+  &__basket-anim {
+    position: relative;
+    left: 0;
+    animation: basketcardAnimation forwards .5s linear;
+  }
+
 }
