@@ -6,3 +6,4 @@ import '@/js/dialogs';
 import '@/js/catalogGenerate'
 import '@/js/descriptionGenerate';
 import '@/js/basket';
+import '@/js/validationForm';

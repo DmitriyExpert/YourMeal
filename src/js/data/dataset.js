@@ -12,7 +12,7 @@ const data = {
         "dish_gram": 520,
         "dish_kkal": 430
       },
-      "urlToImage": "/images/catalog/burgers/meal-bomb.png"
+      "urlToImage": "./images/catalog/burgers/meal-bomb.png"
     },
     {
       "dish_id": 2,
@@ -25,7 +25,7 @@ const data = {
         "dish_gram": 480,
         "dish_kkal": 390
       },
-      "urlToImage": "/images/catalog/burgers/nothungry.png"
+      "urlToImage": "./images/catalog/burgers/nothungry.png"
     },
     {
       "dish_id": 3,
@@ -38,7 +38,7 @@ const data = {
         "dish_gram": 450,
         "dish_kkal": 350
       },
-      "urlToImage": "/images/catalog/burgers/classic.png"
+      "urlToImage": "./images/catalog/burgers/classic.png"
     },
     {
       "dish_id": 4,
@@ -51,7 +51,7 @@ const data = {
         "dish_gram": 650,
         "dish_kkal": 680
       },
-      "urlToImage": "/images/catalog/burgers/superchees.png"
+      "urlToImage": "./images/catalog/burgers/superchees.png"
     },
     {
       "dish_id": 5,
@@ -64,7 +64,7 @@ const data = {
         "dish_gram": 550,
         "dish_kkal": 480
       },
-      "urlToImage": "/images/catalog/burgers/italiano.png"
+      "urlToImage": "./images/catalog/burgers/italiano.png"
     },
 
     // Закуски
@@ -79,7 +79,7 @@ const data = {
         "dish_gram": 150,
         "dish_kkal": 320
       },
-      "urlToImage": "/images/catalog/snacks/potato.png"
+      "urlToImage": "./images/catalog/snacks/potato.png"
     },
     {
       "dish_id": 7,
@@ -92,7 +92,7 @@ const data = {
         "dish_gram": 180,
         "dish_kkal": 400
       },
-      "urlToImage": "/images/catalog/snacks/nagets.png"
+      "urlToImage": "./images/catalog/snacks/nagets.png"
     },
     {
       "dish_id": 8,
@@ -105,7 +105,7 @@ const data = {
         "dish_gram": 160,
         "dish_kkal": 380
       },
-      "urlToImage": "/images/catalog/snacks/nachos.png"
+      "urlToImage": "./images/catalog/snacks/nachos.png"
     },
     {
       "dish_id": 9,
@@ -118,7 +118,7 @@ const data = {
         "dish_gram": 170,
         "dish_kkal": 350
       },
-      "urlToImage": "/images/catalog/snacks/circles.png"
+      "urlToImage": "./images/catalog/snacks/circles.png"
     },
     {
       "dish_id": 10,
@@ -131,7 +131,7 @@ const data = {
         "dish_gram": 250,
         "dish_kkal": 450
       },
-      "urlToImage": "/images/catalog/snacks/chicken.png"
+      "urlToImage": "./images/catalog/snacks/chicken.png"
     },
 
     // Хот-доги
@@ -146,7 +146,7 @@ const data = {
         "dish_gram": 150,
         "dish_kkal": 300
       },
-      "urlToImage": "/images/catalog/hot-dogs/classic-hot-dog.png"
+      "urlToImage": "./images/catalog/hot-dogs/classic-hot-dog.png"
     },
     {
       "dish_id": 12,
@@ -159,7 +159,7 @@ const data = {
         "dish_gram": 200,
         "dish_kkal": 350
       },
-      "urlToImage": "/images/catalog/hot-dogs/home-hot-dog.png"
+      "urlToImage": "./images/catalog/hot-dogs/home-hot-dog.png"
     },
     {
       "dish_id": 13,
@@ -172,7 +172,7 @@ const data = {
         "dish_gram": 220,
         "dish_kkal": 400
       },
-      "urlToImage": "/images/catalog/hot-dogs/bekon-hot-dog.png"
+      "urlToImage": "./images/catalog/hot-dogs/bekon-hot-dog.png"
     },
     {
       "dish_id": 14,
@@ -185,7 +185,7 @@ const data = {
         "dish_gram": 180,
         "dish_kkal": 330
       },
-      "urlToImage": "/images/catalog/hot-dogs/spicy-hot-dog.png"
+      "urlToImage": "./images/catalog/hot-dogs/spicy-hot-dog.png"
     },
     {
       "dish_id": 15,
@@ -198,7 +198,7 @@ const data = {
         "dish_gram": 210,
         "dish_kkal": 370
       },
-      "urlToImage": "/images/catalog/hot-dogs/dats-hot-dog.png"
+      "urlToImage": "./images/catalog/hot-dogs/dats-hot-dog.png"
     },
 
     // Комбо
@@ -213,7 +213,7 @@ const data = {
         "dish_gram": 600,
         "dish_kkal": 900
       },
-      "urlToImage": "/images/catalog/combos/combo1.png"
+      "urlToImage": "./images/catalog/combos/combo1.png"
     },
     {
       "dish_id": 17,
@@ -226,7 +226,7 @@ const data = {
         "dish_gram": 550,
         "dish_kkal": 850
       },
-      "urlToImage": "/images/catalog/combos/combo2.png"
+      "urlToImage": "./images/catalog/combos/combo2.png"
     },
     {
       "dish_id": 18,
@@ -239,7 +239,7 @@ const data = {
         "dish_gram": 1200,
         "dish_kkal": 1800
       },
-      "urlToImage": "/images/catalog/combos/combo3.png"
+      "urlToImage": "./images/catalog/combos/combo3.png"
     },
     {
       "dish_id": 19,
@@ -252,7 +252,7 @@ const data = {
         "dish_gram": 400,
         "dish_kkal": 700
       },
-      "urlToImage": "/images/catalog/combos/combo4.png"
+      "urlToImage": "./images/catalog/combos/combo4.png"
     },
     {
       "dish_id": 20,
@@ -265,7 +265,7 @@ const data = {
         "dish_gram": 900,
         "dish_kkal": 1500
       },
-      "urlToImage": "/images/catalog/combos/combo5.png"
+      "urlToImage": "./images/catalog/combos/combo5.png"
     },
 
     // Шаурма
@@ -280,7 +280,7 @@ const data = {
         "dish_gram": 350,
         "dish_kkal": 650
       },
-      "urlToImage": "/images/catalog/shwarmas/classic-shwarma.png"
+      "urlToImage": "./images/catalog/shwarmas/classic-shwarma.png"
     },
     {
       "dish_id": 22,
@@ -293,7 +293,7 @@ const data = {
         "dish_gram": 380,
         "dish_kkal": 700
       },
-      "urlToImage": "/images/catalog/shwarmas/mexico-shwarma.png"
+      "urlToImage": "./images/catalog/shwarmas/mexico-shwarma.png"
     },
     {
       "dish_id": 23,
@@ -306,7 +306,7 @@ const data = {
         "dish_gram": 320,
         "dish_kkal": 580
       },
-      "urlToImage": "/images/catalog/shwarmas/vegeter-shwarma.png"
+      "urlToImage": "./images/catalog/shwarmas/vegeter-shwarma.png"
     },
     {
       "dish_id": 24,
@@ -319,7 +319,7 @@ const data = {
         "dish_gram": 400,
         "dish_kkal": 750
       },
-      "urlToImage": "/images/catalog/shwarmas/govyad-shwarma.png"
+      "urlToImage": "./images/catalog/shwarmas/govyad-shwarma.png"
     },
     {
       "dish_id": 25,
@@ -332,7 +332,7 @@ const data = {
         "dish_gram": 370,
         "dish_kkal": 720
       },
-      "urlToImage": "/images/catalog/shwarmas/chees-shwarma.png"
+      "urlToImage": "./images/catalog/shwarmas/chees-shwarma.png"
     },
 
     // Пицца
@@ -347,7 +347,7 @@ const data = {
         "dish_gram": 500,
         "dish_kkal": 1200
       },
-      "urlToImage": "/images/catalog/pizzas/peperony-pizza.png"
+      "urlToImage": "./images/catalog/pizzas/peperony-pizza.png"
     },
     {
       "dish_id": 27,
@@ -360,7 +360,7 @@ const data = {
         "dish_gram": 450,
         "dish_kkal": 1100
       },
-      "urlToImage": "/images/catalog/pizzas/margaritta-pizza.png"
+      "urlToImage": "./images/catalog/pizzas/margaritta-pizza.png"
     },
     {
       "dish_id": 28,
@@ -373,7 +373,7 @@ const data = {
         "dish_gram": 550,
         "dish_kkal": 1300
       },
-      "urlToImage": "/images/catalog/pizzas/gavay-pizza.png"
+      "urlToImage": "./images/catalog/pizzas/gavay-pizza.png"
     },
     {
       "dish_id": 29,
@@ -386,7 +386,7 @@ const data = {
         "dish_gram": 520,
         "dish_kkal": 1250
       },
-      "urlToImage": "/images/catalog/pizzas/four-chees-pizza.png"
+      "urlToImage": "./images/catalog/pizzas/four-chees-pizza.png"
     },
     {
       "dish_id": 30,
@@ -399,7 +399,7 @@ const data = {
         "dish_gram": 600,
         "dish_kkal": 1400
       },
-      "urlToImage": "/images/catalog/pizzas/meal-pizza.png"
+      "urlToImage": "./images/catalog/pizzas/meal-pizza.png"
     },
 
     // Wok
@@ -414,7 +414,7 @@ const data = {
         "dish_gram": 400,
         "dish_kkal": 700
       },
-      "urlToImage": "/images/catalog/woks/udon-wok.png"
+      "urlToImage": "./images/catalog/woks/udon-wok.png"
     },
     {
       "dish_id": 32,
@@ -427,7 +427,7 @@ const data = {
         "dish_gram": 380,
         "dish_kkal": 650
       },
-      "urlToImage": "/images/catalog/woks/krevet-wok.png"
+      "urlToImage": "./images/catalog/woks/krevet-wok.png"
     },
     {
       "dish_id": 33,
@@ -440,7 +440,7 @@ const data = {
         "dish_gram": 350,
         "dish_kkal": 600
       },
-      "urlToImage": "/images/catalog/woks/ris-wok.png"
+      "urlToImage": "./images/catalog/woks/ris-wok.png"
     },
     {
       "dish_id": 34,
@@ -453,7 +453,7 @@ const data = {
         "dish_gram": 320,
         "dish_kkal": 550
       },
-      "urlToImage": "/images/catalog/woks/funchoza-wok.png"
+      "urlToImage": "./images/catalog/woks/funchoza-wok.png"
     },
     {
       "dish_id": 35,
@@ -466,7 +466,7 @@ const data = {
         "dish_gram": 420,
         "dish_kkal": 720
       },
-      "urlToImage": "/images/catalog/woks/egg-wok.png"
+      "urlToImage": "./images/catalog/woks/egg-wok.png"
     },
 
     // Десерты
@@ -481,7 +481,7 @@ const data = {
         "dish_gram": 150,
         "dish_kkal": 450
       },
-      "urlToImage": "/images/catalog/desserts/tort-dessert.png"
+      "urlToImage": "./images/catalog/desserts/tort-dessert.png"
     },
     {
       "dish_id": 37,
@@ -494,7 +494,7 @@ const data = {
         "dish_gram": 180,
         "dish_kkal": 500
       },
-      "urlToImage": "/images/catalog/desserts/tiramisu-dessert.png"
+      "urlToImage": "./images/catalog/desserts/tiramisu-dessert.png"
     },
     {
       "dish_id": 38,
@@ -507,7 +507,7 @@ const data = {
         "dish_gram": 160,
         "dish_kkal": 480
       },
-      "urlToImage": "/images/catalog/desserts/chizkeyk-dessert.png"
+      "urlToImage": "./images/catalog/desserts/chizkeyk-dessert.png"
     },
     {
       "dish_id": 39,
@@ -520,7 +520,7 @@ const data = {
         "dish_gram": 100,
         "dish_kkal": 250
       },
-      "urlToImage": "/images/catalog/desserts/ice-cream-dessert.png"
+      "urlToImage": "./images/catalog/desserts/ice-cream-dessert.png"
     },
     {
       "dish_id": 40,
@@ -533,7 +533,7 @@ const data = {
         "dish_gram": 200,
         "dish_kkal": 300
       },
-      "urlToImage": "/images/catalog/desserts/fruit-salad-dessert.png"
+      "urlToImage": "./images/catalog/desserts/fruit-salad-dessert.png"
     },
 
     // Соусы
@@ -548,7 +548,7 @@ const data = {
         "dish_gram": 30,
         "dish_kkal": 40
       },
-      "urlToImage": "/images/catalog/sauces/ketchup-sauce.png"
+      "urlToImage": "./images/catalog/sauces/ketchup-sauce.png"
     },
     {
       "dish_id": 42,
@@ -561,7 +561,7 @@ const data = {
         "dish_gram": 30,
         "dish_kkal": 200
       },
-      "urlToImage": "/images/catalog/sauces/mayonez-sauce.png"
+      "urlToImage": "./images/catalog/sauces/mayonez-sauce.png"
     },
     {
       "dish_id": 43,
@@ -574,7 +574,7 @@ const data = {
         "dish_gram": 30,
         "dish_kkal": 50
       },
-      "urlToImage": "/images/catalog/sauces/bbq-sauce.png"
+      "urlToImage": "./images/catalog/sauces/bbq-sauce.png"
     },
     {
       "dish_id": 44,
@@ -587,7 +587,7 @@ const data = {
         "dish_gram": 30,
         "dish_kkal": 150
       },
-      "urlToImage": "/images/catalog/sauces/cezar-sauce.png"
+      "urlToImage": "./images/catalog/sauces/cezar-sauce.png"
     },
     {
       "dish_id": 45,
@@ -600,7 +600,7 @@ const data = {
         "dish_gram": 30,
         "dish_kkal": 30
       },
-      "urlToImage": "/images/catalog/sauces/chili-sauce.png"
+      "urlToImage": "./images/catalog/sauces/chili-sauce.png"
     }
   ],
   "category": [
@@ -608,55 +608,55 @@ const data = {
       "id": 1,
       "category_name": "Бургеры",
       "category_type": "burger",
-      "urlToIcon": "/icons/burger.svg",
+      "urlToIcon": "./icons/burger.svg",
     },
     {
       "id": 2,
       "category_name": "Закуски",
       "category_type": "snack",
-      "urlToIcon": "/icons/snacks.svg"
+      "urlToIcon": "./icons/snacks.svg"
     },
     {
       "id": 3,
       "category_name": "Хот-доги",
       "category_type": "hot_dog",
-      "urlToIcon": "/icons/hot-dogs.svg"
+      "urlToIcon": "./icons/hot-dogs.svg"
     },
     {
       "id": 4,
       "category_name": "Комбо",
       "category_type": "combo",
-      "urlToIcon": "/icons/pizza.svg"
+      "urlToIcon": "./icons/pizza.svg"
     },
     {
       "id": 5,
       "category_name": "Шаурма",
       "category_type": "shawarma",
-      "urlToIcon": "/icons/shawarma.svg"
+      "urlToIcon": "./icons/shawarma.svg"
     },
     {
       "id": 6,
       "category_name": "Пицца",
       "category_type": "pizza",
-      "urlToIcon": "/icons/pizza.svg"
+      "urlToIcon": "./icons/pizza.svg"
     },
     {
       "id": 7,
       "category_name": "Вок",
       "category_type": "wok",
-      "urlToIcon": "/icons/vok.svg"
+      "urlToIcon": "./icons/vok.svg"
     },
     {
       "id": 8,
       "category_name": "Дессерты",
       "category_type": "dessert",
-      "urlToIcon": "/icons/deserts.svg"
+      "urlToIcon": "./icons/deserts.svg"
     },
     {
       "id": 9,
       "category_name": "Соусы",
       "category_type": "sauce",
-      "urlToIcon": "/icons/sous.svg"
+      "urlToIcon": "./icons/sous.svg"
     }
   ]
 
